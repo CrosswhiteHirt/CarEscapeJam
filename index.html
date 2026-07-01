@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car Escape Jam</title>
+  <meta name="description" content="Car Escape Jam is a SpriteKit puzzle game where players guide cars out of tight traffic boards.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18202a;
+      --muted: #5d6875;
+      --line: #e5e8ec;
+      --paper: #ffffff;
+      --accent: #e6211c;
+      --blue: #1174d8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #f7f8fa;
+      line-height: 1.55;
+    }
+    header {
+      min-height: 76vh;
+      display: grid;
+      place-items: center;
+      padding: 56px 22px;
+      background: linear-gradient(135deg, #ff5538 0%, #ff8b2a 42%, #1b2430 100%);
+      color: #fff;
+      text-align: center;
+    }
+    .hero {
+      width: min(980px, 100%);
+    }
+    .icon {
+      width: 132px;
+      height: 132px;
+      border-radius: 28px;
+      box-shadow: 0 22px 60px rgba(0, 0, 0, .28);
+      display: block;
+      margin: 0 auto 24px;
+    }
+    h1 {
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: 1;
+      margin: 0 0 16px;
+      letter-spacing: 0;
+    }
+    .tagline {
+      font-size: clamp(18px, 3vw, 28px);
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255,255,255,.92);
+    }
+    main {
+      width: min(1100px, 100%);
+      margin: 0 auto;
+      padding: 44px 22px 64px;
+    }
+    section {
+      margin: 0 0 52px;
+    }
+    h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      margin: 0 0 16px;
+      letter-spacing: 0;
+    }
+    p {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+    .feature {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      font-weight: 650;
+    }
+    .shots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+    .shots img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 42px rgba(25, 32, 42, .12);
+      background: #fff;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { color: var(--blue); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <img class="icon" src="../GameTemplate/GameTemplate/Assets.xcassets/AppIcon.appiconset/AppIcon.png" alt="Car Escape Jam app icon">
+      <h1>Car Escape Jam</h1>
+      <p class="tagline">Clear the traffic puzzle. Plan each tap, avoid roadblocks, and guide every car safely out.</p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>A compact car escape puzzle</h2>
+      <p>Car Escape Jam is a SpriteKit puzzle game built with Objective-C. Each level asks you to read the board, choose the right order, and send cars out before they collide with other cars or roadblocks.</p>
+      <p>The game supports iOS 13 and later across compatible iPhone and iPad devices. It is designed for portrait play, quick sessions, and a steady difficulty curve.</p>
+      <div class="features">
+        <div class="feature">30 deterministic levels</div>
+        <div class="feature">Star ratings and saved progress</div>
+        <div class="feature">One mistake chance per level</div>
+        <div class="feature">Roadblocks in later puzzles</div>
+        <div class="feature">Music and sound controls</div>
+        <div class="feature">Rewarded revive option</div>
+      </div>
+    </section>
+    <section>
+      <h2>Screenshots</h2>
+      <div class="shots">
+        <img src="appstore/screenshots/iphone_6_9_1290x2796/01_IMG_0017_1290x2796.png" alt="Car Escape Jam level screenshot">
+        <img src="appstore/screenshots/iphone_6_9_1290x2796/02_IMG_0018_1290x2796.png" alt="Car Escape Jam gameplay screenshot">
+        <img src="appstore/screenshots/iphone_6_9_1290x2796/03_IMG_0021_1290x2796.png" alt="Car Escape Jam puzzle board screenshot">
+        <img src="appstore/screenshots/iphone_6_9_1290x2796/04_starphotot_1290x2796.png" alt="Car Escape Jam launch artwork screenshot">
+      </div>
+    </section>
+    <footer>
+      <p>(C) 2026 Gaoyuan. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </main>
+</body>
+</html>
